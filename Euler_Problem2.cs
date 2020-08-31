@@ -1,4 +1,6 @@
-﻿using System;
+//A program to add the even numbers in the Fibonacci sequence from zero to 4 million.
+
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using System.Text;
@@ -10,13 +12,10 @@ namespace ProjectEuler
 
         public static long Problem2()
         {
-           
-          
             long sum1 = 0; //holds fibonacci numbers
             long sum2 = 2; //captures first even number in fib sequence
             long num1 = 1;
             long num2 = 2;
-
 
             while (sum1 <= 4000000)
             {
@@ -29,14 +28,8 @@ namespace ProjectEuler
                 sum1 = num1 + num2;
                 num1 = num2;
                 num2 = sum1;
-                
             }
-
             return sum2;
         }
 
-
-
-
-    }
 }
